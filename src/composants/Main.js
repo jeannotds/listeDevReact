@@ -5,7 +5,7 @@ import Periode from '../styles/Periode'
 import Niveau from './Niveau'
 
 
-function Main(){
+function Main({children}){
 
     const listApp = apprenantsList.reduce((acc, list)=>
         acc.includes(list.categorie) ? acc : acc.concat(list.categorie), []
@@ -14,7 +14,8 @@ function Main(){
 
     return(
         <main className="main">
-            <div className='background'></div>
+            {/* <div className='background'></div> */}
+            {children}
 
             <div className='div-img'>
                 <img  src={Person} alt='portfolio' className='wamentech'/>

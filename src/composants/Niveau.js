@@ -1,14 +1,13 @@
 import { apprenantsList } from "../datas/apprenantsBD"
 
 
-
 function Niveau({type, valeur}){
     
-    const myType = type === 'niveau' ? '☀️' : '💧'
+    const myType = type === 'niveau' ? '☀️' : null
     const range =[1, 2, 3]
 
     return(
-        <div className="niveau-div">Niv:
+        <div className="niveau-div">cat :   
            {range.map((rangeElem)=>(
                 valeur >= rangeElem ? <span className="niveau" key={rangeElem.toString()}>{myType}</span>:null
            ))}
@@ -17,7 +16,7 @@ function Niveau({type, valeur}){
 
 }
 export default Niveau
-
+// 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
 // function Niveau({type, valeurEl}){
 
 //     const myType = type === 'niveau' ? '☀️' : '💧'
