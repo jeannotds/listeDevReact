@@ -1,0 +1,31 @@
+.header{
+    color:  #28264D;
+     height: 60px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 80px;
+ }
+ span{
+     color: #EE5D00; 
+ }
+ 
+ .accueil.active{
+     color: #EE5D00;
+ }
+ 
+ .contact{
+     border: 1px solid #EE5D00;
+ }
+ 
+ .nav-bar a{
+    color:  #28264D;
+     text-decoration: none;
+     margin-left: 25px;
+     padding: 5px;
+ }
+ 
+ .menu-link:hover{
+     color: #EE5D00;
+ }
