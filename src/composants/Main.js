@@ -2,6 +2,7 @@ import '../styles/Main.css'
 import Person from '../img/womentech.jpg'
 import { apprenantsList } from '../datas/apprenantsBD'
 import Periode from '../styles/Periode'
+import Niveau from './Niveau'
 
 
 function Main(){
@@ -18,7 +19,6 @@ function Main(){
             <div className='div-img'>
                 <img  src={Person} alt='portfolio' className='wamentech'/>
                 <Periode />
-                
             </div>
 
             <ul className='liste-categorie'>
@@ -31,8 +31,11 @@ function Main(){
                 {apprenantsList.map((list)=>(
                     <li key={list.id} className='liste'>
                         {list.finish ? <div className='finish'>Deja fini(e)</div> : null}
-                        {list.nom } <br/>
-                        {list.prenom}
+                        {list.nom }<br/>{list.prenom}
+
+                        {/* <Niveau type='niveau' valeurEl={list.niveau} /> */}
+                        <Niveau type='niveau' valeur={list.niveau}/>
+
                     </li>
                 ))}
             </ul>
