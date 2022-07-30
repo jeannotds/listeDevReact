@@ -28,7 +28,7 @@ function Main({children}){
             
 
             <ul className='list-ul'>
-                {apprenantsList.map(({id, nom, prenom, categorie, age, image})=>(
+                {apprenantsList.map(({id, nom, prenom, categorie, age, image, niveau})=>(
                         <ListItem
                             key={id}
                             id={id}
@@ -37,6 +37,7 @@ function Main({children}){
                             categorie={categorie}
                             age={age}
                             image={image}
+                            niveau={niveau}
                         />
                 ))}
             </ul>

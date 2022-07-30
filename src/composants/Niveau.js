@@ -8,8 +8,8 @@ function Niveau({type, valeur}){
 
     return(
        <div>
-            {apprenantsList.map((rangeElem)=>(
-                <li></li>
+            {range.map((rangeElem)=>(
+                valeur >= rangeElem ? <span key={rangeElem.toString()}>{myType}</span> : null
             ))}
        </div>
     )

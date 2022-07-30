@@ -1,7 +1,7 @@
 import '../styles/ListItem.css'
+import Niveau from './Niveau'
 
-
-function ListItem({id, nom, prenom, categorie, age, image}){
+function ListItem({id, nom, prenom, categorie, age, image, niveau}){
     
     return(
         <div>
@@ -9,9 +9,11 @@ function ListItem({id, nom, prenom, categorie, age, image}){
                 <img src={image} alt="" className="img-list"/>
                 <div>Noms : {nom} {prenom}</div>
                 <div>{`Age : ${age} ans`}</div>
-                <div>Categorie : {categorie}</div>
+                <div>Demain : {categorie}</div>
+               <div className='categorie'>Categorie 
+                    <Niveau type='niveau' valeur={niveau}/>
+               </div>
             </li>
-            <div></div>
         </div>
     )
 }

@@ -2,6 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 12px;
+    width: 1000px;
+}
+
+ul li{
+    list-style: none;
 }
 
 .img-list{
@@ -15,6 +20,9 @@
 .image-li{
     width: 200px;
     margin: 15px;
-    list-style: none;
     border-radius: 3px;
+}
+
+.categorie{
+    display: flex;
 }
