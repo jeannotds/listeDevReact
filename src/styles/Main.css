@@ -8,39 +8,3 @@
     height: 200px;
     width: 100%;
 }
-
-
-.wamentech{
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 100%;
-    margin: 90px 0 10px 90px;
-}
-
-ul li{
-    list-style: none;
-}
-
-.ul-liste{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul .liste{
-    list-style: none;
-    border: 1px solid orange;
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    margin: 8px;
-    position: relative;
-}
-
-.finish{
-    background-color: orange;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
