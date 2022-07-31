@@ -1,9 +1,9 @@
 import '../styles/ListItem.css'
 import Niveau from './Niveau'
 
-function showPlant(plant){
+function showPlant(nom, prenom){
 
-    alert(`Informations sur ${plant} ?` )
+    alert(`Voulez-vous voir les informations sur ${nom +' '+ prenom} ?` )
 
 }
 
@@ -13,7 +13,7 @@ function ListItem({id, nom, prenom, categorie, age, image, niveau}){
     return(
         <div>
             <li key={id} className="image-li" onClick={function(){
-                showPlant(nom)
+                showPlant(nom, prenom)
             }}>
                 <img src={image} alt="" className="img-list"/>
                 <div>Noms : {nom} {prenom}</div>
