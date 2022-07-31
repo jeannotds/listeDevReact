@@ -17,7 +17,7 @@ function Formulaire(){
     return(
         <div>
             {/* //FORMULAIRE NON CONTROLE */}
-            <form onSubmit={Form}>
+            <form onSubmit={Form} className="formNomnCont">
                 <input type="text" name="nom" placeholder="Entrer votre nom!"/>
                 <input type="text" name="prenom" placeholder="Entrer votre prenom!"/>
                 <button type="submit">Entrer</button>
