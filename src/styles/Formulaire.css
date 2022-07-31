@@ -1,3 +1,30 @@
 .formNomnCont{
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+}
+.cont-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.formNomnCont input, button, textarea{
+    width: 200px;
+    height: 20px;
+    margin: 3px;
+}
+
+.formNomnCont button{
+    width: 208px;
+    height: 25px;
+    margin: 3px;
 }

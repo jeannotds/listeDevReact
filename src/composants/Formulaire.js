@@ -1,4 +1,5 @@
 import { useState } from "react"
+import '../styles/Formulaire.css'
 
 
 //FORMULAIRE NON CONTROLE
@@ -15,28 +16,31 @@ function Formulaire(){
     const [inputValue, setValue] = useState()
 
     return(
-        <div>
-            {/* //FORMULAIRE NON CONTROLE */}
-            <form onSubmit={Form} className="formNomnCont">
-                <input type="text" name="nom" placeholder="Entrer votre nom!"/>
-                <input type="text" name="prenom" placeholder="Entrer votre prenom!"/>
-                <button type="submit">Entrer</button>
+        <div className="container">
+            <h1>FORMULAIRE NON CONTROLE</h1>
+            <form onSubmit={Form} className="cont-1">
+               <div className="formNomnCont">
+                    <input type="text" name="nom" placeholder="Entrer votre nom!"/>
+                    <input type="text" name="prenom" placeholder="Entrer votre prenom!"/>
+                    <button type="submit">Entrer</button>
+               </div>
             </form>
 
-
-            {/* //FORMULAIRE CONTROLE */}
-            <div>
-                <textarea value={inputValue}
-                    onChange={(e)=>{
-                        setValue(e.target.value)
-                    }}
-                />
-                <button
-                    onClick={()=>{
-                        alert(inputValue)
-                    }}
-                >Submit</button>
-            </div>
+            <h1>FORMULAIRE CONTROLE</h1>
+           <div className="cont-1">
+                <div className="formNomnCont">
+                        <textarea value={inputValue}
+                            onChange={(e)=>{
+                                setValue(e.target.value)
+                            }}
+                        />
+                        <button
+                            onClick={()=>{
+                                alert(inputValue)
+                            }}
+                        >Submit</button>
+                    </div>
+           </div>
 
         </div>
     )
