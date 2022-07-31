@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Main from "./Main";
+import Formulaire from "./Formulaire";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Main>
             <div className='background'></div>
         </Main>
+        <Formulaire />
     </div>
   );
 }
