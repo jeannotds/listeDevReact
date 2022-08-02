@@ -3,20 +3,20 @@ import { apprenantsList } from "../datas/apprenantsBD"
 
 function Niveau({type, valeur}){
 
-    const quantityLabel = {
+    const maCategorie = {
         1: 'Junior',
         2: 'Intermediare',
         3: 'Senior'
     }
 
     function Action(){
-        alert(`Vous etes au categorie ${quantityLabel[valeur]}. ${valeur === 3 ? 'Felicitation!':
+        alert(`Vous etes au categorie ${maCategorie[valeur]}. ${valeur === 3 ? 'Felicitation!':
                                 'Travaillez encore!'}`)
     }
     
     const myType = type === 'niveau' ? '☀️' : null
     const range =[1, 2, 3]
-
+    
     return(
        <div onClick={()=>{
         Action()

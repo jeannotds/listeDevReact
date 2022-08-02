@@ -4,7 +4,7 @@ import '../styles/Header.css'
 function Header(){
     return (
         <header className="header">
-            <h1 className="title-logo">Portfolio<span>.</span></h1>
+            <h1 className="title-logo">logo<span>.</span></h1>
             <nav className="nav-bar">
                 <a href="#" className="menu-link accueil active">Accueil</a>
                 <a href="#" className="menu-link aprpos">A prpos</a>
