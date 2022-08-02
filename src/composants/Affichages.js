@@ -20,6 +20,10 @@ function Affichages(){
             }}>Ajouter</button>
 
             <p>La somme vaut : {value * montant}</p>
+
+            <button onClick={()=>{
+                setValue(0)
+            }}>Vider</button>
         </div>
     ) : <div>
             <p onClick={()=>{
