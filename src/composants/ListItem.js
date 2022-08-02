@@ -19,9 +19,7 @@ function ListItem({id, nom, prenom, categorie, age, image, niveau}){
                 <div>Noms : {nom} {prenom}</div>
                 <div>{`Age : ${age} ans`}</div>
                 <div>Demain : {categorie}</div>
-               <div className='categorie'>Categorie 
-                    <Niveau type='niveau' valeur={niveau}/>
-               </div>
+                <Niveau type='niveau' valeur={niveau}/>
             </li>
         </div>
     )

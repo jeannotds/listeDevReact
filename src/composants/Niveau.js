@@ -10,7 +10,8 @@ function Niveau({type, valeur}){
     }
 
     function Action(){
-        alert(`Vous etes au categorie ${quantityLabel[valeur]}`)
+        alert(`Vous etes au categorie ${quantityLabel[valeur]}. ${valeur === 3 ? 'Felicitation!':
+                                'Travaillez encore!'}`)
     }
     
     const myType = type === 'niveau' ? '☀️' : null
