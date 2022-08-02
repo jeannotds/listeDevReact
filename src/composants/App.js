@@ -1,16 +1,23 @@
 import Header from "./Header";
 import Main from "./Main";
 import Formulaire from "./Formulaire";
-import Affichages from "./Affichages";
+import Cart from "./Cart";
+import { useState } from "react";
 
 function App() {
+  // const [valeur, setValeur] = useState([])
+  const [cart, updateCart] = useState([])
   return (
     <div className="App">
         <Header />
-        <Main>
-            <div className='background'></div>
-            <Affichages />
-        </Main>
+        <div>
+          {/* <Cart valeur={valeur} setValeur={setValeur}/> */}
+          <Cart cart={cart} updateCart={updateCart} />
+          <Main cart={cart} updateCart={updateCart} >
+              <div className='background'></div>
+          </Main>
+        </div>
+        
         <Formulaire />
     </div>
   );

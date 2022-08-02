@@ -3,6 +3,7 @@ import Person from '../img/womentech.jpg'
 import { apprenantsList } from '../datas/apprenantsBD'
 import Periode from '../styles/Periode'
 import ListItem from './ListItem'
+import Affichages from './Cart'
 
 
 function Main({children}){
@@ -29,6 +30,7 @@ function Main({children}){
 
             <ul className='list-ul'>
                 {apprenantsList.map(({id, nom, prenom, categorie, age, image, niveau})=>(
+                    <div key={id}>
                         <ListItem
                             key={id}
                             id={id}
@@ -39,9 +41,11 @@ function Main({children}){
                             image={image}
                             niveau={niveau}
                         />
+                        <button onClick={() => updateCart(cart + 1)}>Ajouter</button>
+                    </div>
                 ))}
+                
             </ul>
-            
                        
         </main>
     )
