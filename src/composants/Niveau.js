@@ -2,12 +2,24 @@ import { apprenantsList } from "../datas/apprenantsBD"
 
 
 function Niveau({type, valeur}){
+
+    const quantityLabel = {
+        1: 'Junior',
+        2: 'Intermediare',
+        3: 'Senior'
+    }
+
+    function Action(){
+        alert(`Vous etes au categorie ${quantityLabel[valeur]}`)
+    }
     
     const myType = type === 'niveau' ? '☀️' : null
     const range =[1, 2, 3]
 
     return(
-       <div>
+       <div onClick={()=>{
+        Action()
+       }}>
             {range.map((rangeElem)=>(
                 valeur >= rangeElem ? <span key={rangeElem.toString()}>{myType}</span> : null
             ))}
