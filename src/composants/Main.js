@@ -3,10 +3,8 @@ import Person from '../img/womentech.jpg'
 import { apprenantsList } from '../datas/apprenantsBD'
 import Periode from '../styles/Periode'
 import ListItem from './ListItem'
-import Affichages from './Cart'
 
-
-function Main({children}){
+function Main({children, cart, updateCart}){
 
     const listApp = apprenantsList.reduce((acc, list)=>
         acc.includes(list.categorie) ? acc : acc.concat(list.categorie), []
@@ -41,12 +39,12 @@ function Main({children}){
                             image={image}
                             niveau={niveau}
                         />
-                        <button onClick={() => updateCart(cart + 1)}>Ajouter</button>
+                        <button onClick={() => updateCart(cart + 1)}>Ajouter</button>            
                     </div>
+                    
                 ))}
                 
             </ul>
-                       
         </main>
     )
 }
